@@ -12,11 +12,11 @@ centos docker in docker
 进入docker carrier,运行：
 
     service docker start
-    docker run -i -t -v /bin:/MM/bin -v /usr/bin/:/MM/usr/bin -v /lib64:/MM/lib64 -v /usr/lib64:/MM/usr/lib64 ubuntu /bin/bash
+    docker run -i -t -v /bin:/carrier/bin -v /usr/bin/:/carrier/usr/bin -v /lib64:/carrier/lib64 -v /usr/lib64:/carrier/usr/lib64 ubuntu /bin/bash
 
 在新启动的实例里，设置环境变量
 
-    export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:/lib:/lib64:/MM/lib64/:/MM/usr/lib64/
-    exprot PATH=/bin:/usr/bin:/MM/bin/:/MM/usr/bin/:$PATH
+    export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:/lib:/lib64:/carrier/lib64/:/carrier/usr/lib64/
+    exprot PATH=/bin:/usr/bin:/carrier/bin/:/carrier/usr/bin/:$PATH
 
 后，不需安装可以直接使用docker carrier上面的命令.
