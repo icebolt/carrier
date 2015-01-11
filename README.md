@@ -11,6 +11,7 @@ centos docker in docker
 
 进入docker carrier,运行：
 
+    service docker start
     docker run -i -t -v /bin:/MM/bin -v /usr/bin/:/MM/usr/bin -v /lib64:/MM/lib64 -v /usr/lib64:/MM/usr/lib64 ubuntu /bin/bash
 
 在新启动的实例里，设置环境变量
