@@ -4,7 +4,7 @@ centos docker in docker
 
 在boot2docker v1.3.0执行:
 
-    docker run --privileged -i -t -v /lib/modules/3.16.4-tinycore64/:/lib/modules/3.16.4-tinycore64/ centos-base /bin/bash
+    docker run --privileged -i -t -v /lib/modules/3.16.4-tinycore64/:/lib/modules/3.16.4-tinycore64/ carrier /bin/bash
 
 启动docker carrier
 
