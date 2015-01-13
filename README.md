@@ -17,6 +17,6 @@ centos docker in docker
 在新启动的实例里，设置环境变量
 
     export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:/lib:/lib64:/carrier/lib64/:/carrier/usr/lib64/
-    exprot PATH=/bin:/usr/bin:/carrier/bin/:/carrier/usr/bin/:$PATH
+    export PATH=/bin:/usr/bin:/carrier/bin/:/carrier/usr/bin/:$PATH
 
 后，不需安装可以直接使用docker carrier上面的命令,例如vim,ping,nmap,python,perl等.
