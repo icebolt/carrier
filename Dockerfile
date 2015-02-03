@@ -1,7 +1,7 @@
 FROM centos:centos6
 
 ADD etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo
-ADD etc/yum.repos.d/jimmy.repo /etc/yum.repos.d/jimmy.repo
+#ADD etc/yum.repos.d/jimmy.repo /etc/yum.repos.d/jimmy.repo
 
 RUN \
  rpm --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6 && \
@@ -31,9 +31,9 @@ RUN \
  cd rubygems-2.4.2 && \
  ruby setup.rb && \
  ln -s /opt/rubies/ruby-2.1.3/bin/gem /usr/bin/gem && \
- gem sources --remove https://rubygems.org/ && \
- gem sources -a http://ruby.taobao.org/ && \
- gem install gem-fast && \
+ #gem sources --remove https://rubygems.org/ && \
+ #gem sources -a http://ruby.taobao.org/ && \
+ #gem install gem-fast && \
  #gem update --system && \
  cd .. && rm -rf rubygems-2.4.2
 
