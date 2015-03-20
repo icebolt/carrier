@@ -1,0 +1,8 @@
+[jimmy]
+name=Extra Packages for Enterprise Linux 5 - $basearch
+baseurl=http://mirrors.sohu.com/centos/6/os/x86_64/
+failovermethod=priority
+enabled=1
+keepcache=1
+gpgcheck=0
+gpgkey=http://mirrors.sohu.com/centos/6/os/x86_64/RPM-GPG-KEY-CentOS-6
