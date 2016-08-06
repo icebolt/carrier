@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH=/lib:/lib64:/usr/lib64:/depot/lib64/:/depot/usr/lib64/
+export PATH=$PATH:/depot/bin/:/depot/usr/bin/:/depot/usr/sbin/

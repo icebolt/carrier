@@ -1,0 +1,13 @@
+#!/bin/bash
+
+: ${ROOTFS:=/depot}
+
+[ -d $ROOTFS ] || mkdir ROOTFS
+rpm --root=$ROOTFS --initdb
+rpm --root=$ROOTFS -ivh  http://mirror.centos.org/centos/6.8/os/x86_64/Packages/centos-release-6-8.el6.centos.12.3.x86_64.rpm
+
+yum install --installroot=$ROOTFS --nogpgcheck -y perl vim
+
+ln -s $ROOTFS/usr/lib64/perl5/CORE/libperl.so $ROOTFS/usr/lib64/libperl.so
+
+source /usr/local/bin/setpath
